@@ -1,24 +1,5 @@
 import React, { Component } from 'react';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="container">
-        <Header/>
-        <Body/>
-      </div>
-    );
-  }
-}
-
-class Header extends Component {
-  render(){
-    return (
-      <h3> Hola Mundo! </h3>
-    );
-  }
-}
-
 class Body extends Component {
   render(){
     return(
@@ -50,6 +31,3 @@ class Course extends Component {
     )
   }
 }
-
-
-export default App;
