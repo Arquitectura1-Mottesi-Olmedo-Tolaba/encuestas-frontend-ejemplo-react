@@ -12,7 +12,6 @@ React + Redux CRUD Arq
     /encuestas-frontend-ejemplo-react/mockServer
     npm i
     npm start
-    open http://localhost:8081 (mock del backend)
 
 ## License
 
