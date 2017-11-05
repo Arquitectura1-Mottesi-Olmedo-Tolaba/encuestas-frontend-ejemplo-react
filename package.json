@@ -3,16 +3,20 @@
   "version": "0.0.2",
   "description": "React + Redux Arq",
   "scripts": {
-    "build": "webpack -p --progress --config webpack.config.js",
-    "server": "webpack-dev-server --inline --progress --port 8080",
-    "server-api": "node mockServer/index.js",
-    "start": "npm run server"
+    "start": "webpack-dev-server -d --config webpack.config.js --progress --colors",
+    "prod": "NODE_ENV=production node server.js",
+    "build": "webpack --config webpack.config.js -p --progress --colors",
+    "postinstall": "webpack --config webpack.prod.config.js -p --progress --colors",
+    "server": "webpack-dev-server --inline --progress --port 8080"
   },
   "keywords": [
     "react",
     "redux",
     "arq"
   ],
+  "engines": {
+    "node": "6.2.2"
+  },
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^6.5.1",
