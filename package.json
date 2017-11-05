@@ -6,7 +6,7 @@
     "start": "webpack-dev-server -d --config webpack.config.js --progress --colors",
     "prod": "NODE_ENV=production node server.js",
     "build": "webpack --config webpack.config.js -p --progress --colors",
-    "postinstall": "webpack --config webpack.prod.config.js -p --progress --colors",
+    "postinstall": "webpack --config webpack.config.js -p --progress --colors",
     "server": "webpack-dev-server --inline --progress --port 8080"
   },
   "keywords": [
